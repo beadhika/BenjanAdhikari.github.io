@@ -10,6 +10,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<style>
+            /* Universal rule to resize all images */
+	            img {
+	                max-width: 50%; /* Set the maximum width of all images to 100% */
+	                height: auto; /* Maintain aspect ratio */
+			text-align: center;
+	            }
+       		</style>
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -20,10 +28,10 @@
 				<!-- Intro -->
 					<div id="intro">
 						<h1>Benjan's Portfolio<br />
-							<a  class="image fit"><left><img src="images/profile pic.jpg" alt="" style="width:60%;height:60%;"/></a><center>
+							<a  class="image fit"><center><img src="images/profile pic.jpg" alt="" style="width:60%;height:60%;"/></a>
 						</h1>
-						<p>Welcome to my GitHub page! I'm a Data Analyst with one year of professional experience in transforming complex datasets into actionable insights leveraging a variety of tools, including SQL, Tableau, Power BI, and Excel, to analyze data and drive informed decision-making. </p>
-						<p>I'm passionate about expanding my knowledge in predictive modeling and natural language processing (NLP). You can find examples of my work and projects in these areas within my portfolio.</p>
+						<p>Welcome to my GitHub page! I'm a Data Analyst with one year of professional experience in transforming complex datasets into actionable insights leveraging a variety of tools, including SQL, Tableau, Power BI, and Excel. <br />
+						I'm passionate about expanding my knowledge in predictive modeling and natural language processing (NLP). You can find examples of my work and projects in these areas within my portfolio.</p>
 
 						<ul class="actions">
 							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
@@ -49,74 +57,98 @@
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<h2><a href="https://github.com/beadhika/Deep-Learning-Projects/tree/main/Customer%20retention">Customer Churn Modeling using ANN<br />
-									</a></h2>
+
+						<!-- Data Extraction Projects -->
+						<section class="project-section1">
+							<header>
+								<h2>A. Data Extraction Projects</h2>
+							</header>
+							<article>
+								<header>
+									<h3><a>Population Data Scraping </a> <a href="https://github.com/beadhika/Population-Dynamics-Analysis-A-Multi-Factor-Impact-Study" class="button">View Project</a></h3>
+								</header>
+								<a href="https://github.com/beadhika/Population-Dynamics-Analysis-A-Multi-Factor-Impact-Study" class="image fit"><center><img src="images/Population project.png" alt="" /></a>
+								<p>Webscraped population data using BeautifulSoup library in python and integrated it to a data pipeline.</p>
+								<ul class="actions special">
+									
+								</ul>
+							</article>
+						</section>
+						
+						<!-- Data Exploration Projects -->
+						<section class="project-section2">
+							<header>
+								<h2>B. Data Exploration Project</h2>
+							</header>
+							<article>
+								<header>
+									<h3><a>COVID-19 Data Exploration </a> <a href="https://github.com/beadhika/Covid-Data-Exploration-and-Visualization" class="button">View Project</a> </h3> 
+								</header>
+								<a href="https://github.com/beadhika/Covid-Data-Exploration-and-Visualization" class="image fit"><img src="images/COVID-19.png" alt="" /></a>
+								<p>Performed Exploratory Data Analysis on COVID deaths and vaccination dataset using SQL. Created VIEWs, new columns, joined tables, used data aggregation functions. </p>
+								<ul class="actions special">
+									
+								</ul>
+							</article>
+						</section>
+
+						<!-- Data Visualization Projects -->
+						<section class="project-section3">
+							<header>
+								<h2>C. Data Visualization Projects</h2>
+							</header>
+							<article>
+								<header>
+									<h3><a>Tableau Portfolio </a> <a href="https://public.tableau.com/app/profile/benjan.adhikari/vizzes" class="button">View Project</a></h3>
+								</header>
+								<a href="https://public.tableau.com/app/profile/benjan.adhikari/vizzes" class="image fit"><img src="images/tableau.png" alt="" /></a> 
+								<p>This contains all of my Tableau dashboards. These visualization are in various industries such as Healthcare, Sales, Housing. </p>
+								<ul class="actions special">
+									
+								</ul>
+							</article>
+						</section>
+						
+						<section class="project-section4">
+							<header>
+								<h2>D. Data Modeling Projects</h2>
+							</header>
+						
+							<article>
+								<header>
+									<h3><a>Neural Network from Scratch </a> <a href="https://github.com/beadhika/Neural-Network-from-scratch" class="button">View Project</a></h3>
+								</header>
+								<a href="https://github.com/beadhika/Neural-Network-from-scratch" class="image fit"><img src="images/DL from scratch.png" alt="" /></a>
+								<p>In this project, I learned to create my first neural network from scratch capable of indentifying digits from images using basic python libraries such as numpy and pandas.</p>
+								<ul class="actions special">
+								
+								</ul>
+							</article>
+							<article>
+								<header>
+									<h3><a>Sentiment Analysis on Customer reviews </a> <a href="https://github.com/beadhika/NLP-alexa-reviews" class="button large">View Project</a> </h3>
+								</header>
+								<a href="https://github.com/beadhika/NLP-alexa-reviews" class="image main"><img src="images/wordcloud.png" alt="" /></a>
+								<p>In this project we used sklearn library to create classification models for Amazon customer reviews, used nltk library to perform sentiment analysis and plotted a Wordcloud , in Jupyter Notebook .</p>
+								<ul class="actions special">
+							
+								</ul>
+									
+							</article>
+							
+							<article >
+								<header>
+									<h3><a>Customer Churn Modeling using ANN</a> <a href="https://github.com/beadhika/Deep-Learning-Projects/tree/main/Customer%20retention" class="button">View Project</a> </h3>
 								</header>
 								<p> Created an Artificial Neural Network capable of classifying Customer Churning in a bank with 84% accuracy. Used pandas,tensorflow and scikit-learn libraries. </p>
 								<a href="https://github.com/beadhika/Deep-Learning-Projects/tree/main/Customer%20retention" class="image fit"><img src="images/Customer churning.png" alt="" /></a>
 								<ul class="actions special">
-									<li><a href="https://github.com/beadhika/Deep-Learning-Projects/tree/main/Customer%20retention" class="button">View Project</a></li>
+									
 								</ul>
 									
 							</article>
-
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<h2><a href="https://github.com/beadhika/Neural-Network-from-scratch">Neural Network from Scratch<br />
-									</a></h2>
-									</header>
-									<a href="https://github.com/beadhika/Neural-Network-from-scratch" class="image fit"><img src="images/DL from scratch.png" alt="" /></a>
-									<p>In this project, I learned to create my first neural network from scratch capable of indentifying digits from images using basic python libraries such as numpy and pandas.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/beadhika/Neural-Network-from-scratch" class="button">View Project</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<h2><a href="https://github.com/beadhika/NLP-alexa-reviews">Sentiment Analysis on Customer reviews<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/beadhika/NLP-alexa-reviews" class="image main"><img src="images/wordcloud.png" alt="" /></a>
-									<p>In this project we used sklearn library to create classification models for Amazon customer reviews, used nltk library to perform sentiment analysis and plotted a Wordcloud , in Jupyter Notebook .</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/beadhika/NLP-alexa-reviews" class="button large">View Project</a></li>
-									</ul>
-										
-								</article>
-								<article>
-									<header>
-									
-										<h2><a href="https://github.com/beadhika/Population-Dynamics-Analysis-A-Multi-Factor-Impact-Study">ETL project in python<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/beadhika/Population-Dynamics-Analysis-A-Multi-Factor-Impact-Study" class="image fit"><img src="images/ETL.png" alt="" /></a>
-									<p> Developed an ETL pipeline, perfomed webscraping using BeautifulSoup and Exploratory Data Analysis(EDA) using pandas .</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/beadhika/Population-Dynamics-Analysis-A-Multi-Factor-Impact-Study" class="button">View Project</a></li>
-									</ul>
-								</article>
-
-
-
-
-								<article>
-									<header>
-									
-										<h2><a href="https://public.tableau.com/app/profile/benjan.adhikari/vizzes">Tableau Projects<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/benjan.adhikari/vizzes" class="image fit"><img src="images/tableau.png" alt="" /></a>
-									<p>This contains all of my Tableau dashboards.</p>
-									<ul class="actions special">
-										<li><a href="https://public.tableau.com/app/profile/benjan.adhikari/vizzes" class="button">View Project</a></li>
-									</ul>
-								</article>
-							</section>
+						</section>
+						
 
 
 
